@@ -94,12 +94,15 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className="mb-4 leading-relaxed text-slate-400">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nisi
-              aut, possimus, quis explicabo in debitis ex sint voluptas quidem
-              cupiditate ipsa cumque at nostrum vero doloremque dolore eaque
-              excepturi, esse eius voluptatum soluta magni! Laborum ullam
-              excepturi nostrum doloremque.
+            <p className="mb-4 text-base leading-relaxed text-slate-400">
+              I am a technology enthusiast, a fast learner and good listener. I
+              have a lot of experience with creative software, creating music
+              and organization of differentlife event projects. My self
+              iniciativeness and team spirit makes me fastly adaptive to new and
+              dynamic environments. my wife describes me as really funny, super
+              intelligent and incredibly handsome (so she said I can not come to
+              work in suits, but I promise I will wear a clan hoody). Looking
+              forward to meet you and bring the best I can to the team
             </p>
           </div>
         </section>

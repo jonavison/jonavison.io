@@ -13,8 +13,6 @@
   html {
     text-rendering: optimizeLegibility;
     background-color: var(--background);
-    color: var(--gray-1000);
-    scroll-padding-top: var(--header-height);
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
@@ -53,7 +51,7 @@
     --popover-foreground: 210 20% 98%;
     --primary: 263.4 70% 50.4%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 215 27.9% 16.9%;
+    --secondary: 204 72% 51%;
     --secondary-foreground: 210 20% 98%;
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
@@ -124,19 +122,38 @@
 }
 
 .mouse-cursor-gradient-tracking::before {
-  --size: 800px;
-  backdrop-filter: blur(800px); 
+  --size: 600px;
   content: '';
+  backdrop-filter: blur(1000px);
   position: absolute;
   left: var(--x);
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, 
-              purple, 
-              transparent);
+  background: radial-gradient(
+      ellipse closest-corner at center,
+      rgba(128, 0, 128, 0.8),
+      rgba(148, 0, 211, 0.6),
+      rgba(128, 0, 128, 0.8),
+      rgba(148, 0, 211, 0.6),
+      rgba(148, 0, 211, 0.6),
+      rgba(75, 0, 130, 0.4),
+      rgba(75, 0, 130, 0.4),
+      hsl(var(--background, 0, 0%, 100%)),
+      hsl(var(--background, 0, 0%, 100%)),
+       hsl(var(--background, 0, 0%, 100%)), /* Nearly transparent to create smoother transition */
+      hsl(var(--background, 0, 0%, 100%))
+    ),
+    radial-gradient(
+      ellipse closest-corner at center,
+      hsl(var(--primary, 263.4, 70%, 50.4%)),
+      hsl(var(--background, 0, 0%, 100%)),
+      hsl(var(--background, 0, 0%, 100%)),
+      hsl(var(--background, 0, 0%, 100%))
+    );
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
+  transition: width 0.1s ease, height 0.1s ease;
   z-index: -2000;
-  opacity: 0.2;
+  opacity: 0.1;
+  background-clip: padding-box;
 }
