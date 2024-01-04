@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  html body {
+    font-family: var(--font-sans, var(--font-sans-fallback));
+  }
+
+  body,
+  html {
+    text-rendering: optimizeLegibility;
+    background-color: var(--background);
+    color: var(--gray-1000);
+    scroll-padding-top: var(--header-height);
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
+    border-radius: 10px; 
+  }
+  html::-webkit-scrollbar {
+    width: 0.3vw;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary));
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--primary));
+  }
+  html::-webkit-scrollbar-track {
+    background-color: #555;
+  }
+    :root {
+      --background: 222.2 84% 100%;
+      --primary: 188 86% 53%;
+      --primary-foreground: 185 100% 100%;
+      --secondary: 195 92% 72%;
+      --secondary-foreground: var(--theme-600);
+      --foreground: 240 10% 3.9%;
+      --muted: 240 4.8% 85%;
+      --muted-foreground: 240 3.8% 46.1%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --popover: 195 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+      --card:240 4.8% 97%;
+      --card-foreground: 240 10% 3.9%;
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --accent: 210 20% 98%;
+      --accent-foreground: 240 5.9% 10%;
+      --radius: 0.5rem;
+    }
+  
+    .dark {
+      --background: 263 84% 8%;
+      --foreground: 210 40% 98%;
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+      --primary: 217.2 91.2% 59.8%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 224.3 76.3% 48%;
+    }
+  }
+  
