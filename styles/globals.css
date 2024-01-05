@@ -53,6 +53,8 @@
     --primary-foreground: 210 20% 98%;
     --secondary: 204 72% 51%;
     --secondary-foreground: 210 20% 98%;
+    --soft: 263, 83%, 72%;
+    --soft-foreground: 263 80% 40%;
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
     --accent: 215 27.9% 16.9%;

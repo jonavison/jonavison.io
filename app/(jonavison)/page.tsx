@@ -2,7 +2,7 @@ import Link from 'next/link'
 import '@/styles/globals.css'
 import { cn } from '@/lib/utils'
 import { Icon } from '@/components/icon'
-
+import { Badge } from '@/components/ui/badge'
 type SocialIconName = 'discord' | 'facebook' | 'github'
 
 const socialIcons: {
@@ -46,8 +46,8 @@ export default function Home() {
             Building and creating complex work with modern tools for the web and
             music industry.
           </p>
-          <nav className="hidden h-full lg:block">
-            <ul className="mt-24 flex w-max flex-col gap-4">
+          <nav className="rtl hidden h-full lg:block ">
+            <ul className="inset-x-8 mt-24 flex w-64 flex-col gap-4 rounded-full rounded-s-lg border-b-2 border-r-2 border-muted px-8 py-8">
               <a
                 href="#about"
                 className="group flex items-center text-foreground"
@@ -94,15 +94,19 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className="mb-4 text-base leading-relaxed text-slate-400">
+            <p className="mb-8 text-base leading-relaxed text-slate-400">
               I am a technology enthusiast, a fast learner and good listener. I
               have a lot of experience with creative software, creating music
-              and organization of differentlife event projects. My self
-              iniciativeness and team spirit makes me fastly adaptive to new and
-              dynamic environments. my wife describes me as really funny, super
-              intelligent and incredibly handsome (so she said I can not come to
-              work in suits, but I promise I will wear a clan hoody). Looking
-              forward to meet you and bring the best I can to the team
+              and organization of differentlife event projects.
+            </p>
+            <p className="mb-4 text-base leading-relaxed text-slate-400">
+              {' '}
+              My self iniciativeness and team spirit makes me fastly adaptive to
+              new and dynamic environments. my wife describes me as really
+              funny, super intelligent and incredibly handsome (so she said I
+              can not come to work in suits, but I promise I will wear a clan
+              hoody). Looking forward to meet you and bring the best I can to
+              the team
             </p>
           </div>
         </section>
@@ -187,8 +191,8 @@ export default function Home() {
                 </div>
               </li>
               <li className="mb-12">
-                <div className="group relative grid cursor-pointer rounded-md p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 hover:group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 hover:group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
                     2023 - Present
                   </header>
@@ -208,7 +212,7 @@ export default function Home() {
                         </Link>
                       </div>
                       <div>
-                        <p className="text-slate-400">
+                        <p className="mb-4 text-slate-400">
                           Lorem ipsum dolor sit amet, consectetur adipisicing
                           elit. Eos nisi aut, possimus, quis explicabo in
                           debitis ex sint voluptas quidem cupiditate ipsa cumque
@@ -216,6 +220,20 @@ export default function Home() {
                           esse eius voluptatum soluta magni! Laborum ullam
                           excepturi nostrum doloremque.
                         </p>
+                        <div className="flex gap-2">
+                          <Badge className="inline-flex items-center justify-center rounded-full from-violet-500 to-cyan-500 px-2 py-1 group-hover:bg-gradient-to-r">
+                            React
+                          </Badge>
+                          <Badge className="inline-flex items-center justify-center rounded-full from-violet-500 to-cyan-500 px-2 py-1 group-hover:bg-gradient-to-r">
+                            NextJs
+                          </Badge>
+                          <Badge className="inline-flex items-center justify-center rounded-full from-violet-500 to-cyan-500 px-2 py-1 group-hover:bg-gradient-to-r">
+                            TailwindCss
+                          </Badge>
+                          <Badge className="inline-flex items-center justify-center rounded-full from-violet-500/20 to-cyan-500 px-2 py-1 group-hover:bg-gradient-to-r">
+                            React
+                          </Badge>
+                        </div>
                       </div>
                     </h3>
                   </div>
