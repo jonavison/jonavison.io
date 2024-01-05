@@ -147,7 +147,7 @@
   transform: translate(-50%, -50%);
   transition: width 0.1s ease, height 0.1s ease;
   z-index: -2000;
-  opacity: 0.1;
+  opacity: 0.2;
   background-clip: padding-box;
 }
 
