@@ -210,7 +210,7 @@ export default function Home() {
               with more knowledge, and the excitement of how the web is
               evolving, I created{' '}
               <span className="font-semibold text-slate-200">
-                <Link href="tunedsphere.com">TunedSphere</Link>
+                <Link href="https://tunedsphere.com">TunedSphere</Link>
               </span>
               , an all in one E-commerce and music platform.
             </p>
