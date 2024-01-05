@@ -205,14 +205,13 @@ export default function Home() {
           </div>
           <div>
             <p className="mb-8 text-base leading-relaxed text-slate-400">
-              In 2015, I had a dream of making my record Label and create a
+              In 2015, I had a dream of making my own Record Label and create a
               website for it. At that time, I tried and it was a mess. Today
-              with more knowledge, and the excitement of how the web is
-              evolving, I created{' '}
+              with more knowledge, and excitement, I created{' '}
               <span className="font-semibold text-slate-200">
                 <Link href="https://tunedsphere.com">TunedSphere</Link>
               </span>
-              , an all in one E-commerce and music platform.
+              , an E-commerce and music platform.
             </p>
             <p className="mb-4 text-base leading-relaxed text-slate-400">
               My self iniciativeness and team spirit makes me fastly adaptive to
@@ -354,9 +353,9 @@ export default function Home() {
             <span className="font-bold leading-6 tracking-tight text-cyan-500">
               View Full Résumé
             </span>
-            <span className="transition group-hover:translate-x-2">
+            <span className="transition group-hover:-translate-y-1 group-hover:translate-x-1">
               <Icon
-                name="chevron-right"
+                name="arrow-up-right"
                 className="ml-1 h-5 w-5 font-bold text-cyan-500"
               ></Icon>
             </span>
@@ -472,13 +471,12 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="mb-4 text-base text-slate-400">
-                        Creating a vibrant music ecosystem catering to the
-                        dynamic world of psychedelic trance, uniting artists,
-                        record labels, and DJs.
+                        Blog, Articles, Documentation using markdowns
                       </p>
                       <div className="">
-                        <Badge className="mx-1.5 mb-2">React</Badge>
-                        <Badge className="mx-1.5 mb-2">NextJs</Badge>
+                        <Badge className="mx-1.5 mb-2">MDX</Badge>
+                        <Badge className="mx-1.5 mb-2">Contentlayer</Badge>
+                        <Badge className="mx-1.5 mb-2">JSON</Badge>
                       </div>
                     </div>
                   </h3>

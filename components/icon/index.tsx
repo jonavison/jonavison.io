@@ -13,6 +13,7 @@ import { WarningIcon } from './Warning'
 import { CreditCardIcon } from './CreditCard'
 import { CdIcon } from './Cd'
 import { BookIcon } from './Book'
+import { ArrowUpRightIcon } from './Book copy'
 
 import { SocialIconName, socialIconMap } from './social'
 export type IconName =
@@ -29,6 +30,7 @@ export type IconName =
   | 'credit-card'
   | 'cd'
   | 'book'
+  | 'arrow-up-right'
 
 const iconMap = {
   ...socialIconMap,
@@ -37,6 +39,7 @@ const iconMap = {
   'chevron-left': ChevronLeftIcon,
   'chevron-right': ChevronRightIcon,
   'credit-card': CreditCardIcon,
+  'arrow-up-right': ArrowUpRightIcon,
   book: BookIcon,
   close: CloseIcon,
   cd: CdIcon,
