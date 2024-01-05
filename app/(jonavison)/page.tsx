@@ -206,12 +206,16 @@ export default function Home() {
           </div>
           <div>
             <p className="mb-8 text-base leading-relaxed text-slate-400">
-              I am a technology enthusiast, a fast learner and good listener. I
-              have a lot of experience with creative software, creating music
-              and organization of differentlife event projects.
+              In 2015, I had a dream of making my record Label and create a
+              website for it. At that time, I tried and it was a mess. Today
+              with more knowledge, and the excitement of how the web is
+              evolving, I created{' '}
+              <span className="font-semibold text-slate-200">
+                <Link href="tunedsphere.com">TunedSphere</Link>
+              </span>
+              , an all in one E-commerce and music platform.
             </p>
             <p className="mb-4 text-base leading-relaxed text-slate-400">
-              {' '}
               My self iniciativeness and team spirit makes me fastly adaptive to
               new and dynamic environments. my wife describes me as really
               funny, super intelligent and incredibly handsome (so she said I
@@ -365,6 +369,11 @@ export default function Home() {
           aria-label="Work in Progress"
           ref={projectsSectionRef}
         >
+          <div className="max-w-screen sticky top-0 z-20 -mx-6 mb-6 bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-slate-900/20 px-6 py-5 backdrop-blur md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 ">
+            <h2 className="text-base font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
+              Projects
+            </h2>
+          </div>
           <ol className="group/list">
             <li className="mb-12">
               <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
