@@ -10,6 +10,9 @@ import { ChevronRightIcon } from './ChevronRight'
 import { CloseIcon } from './Close'
 import { MenuIcon } from './Menu'
 import { WarningIcon } from './Warning'
+import { CreditCardIcon } from './CreditCard'
+import { CdIcon } from './Cd'
+import { BookIcon } from './Book'
 
 import { SocialIconName, socialIconMap } from './social'
 export type IconName =
@@ -23,6 +26,9 @@ export type IconName =
   | 'chevron-down'
   | 'chevron-left'
   | 'chevron-right'
+  | 'credit-card'
+  | 'cd'
+  | 'book'
 
 const iconMap = {
   ...socialIconMap,
@@ -30,7 +36,10 @@ const iconMap = {
   'chevron-up': ChevronUpIcon,
   'chevron-left': ChevronLeftIcon,
   'chevron-right': ChevronRightIcon,
+  'credit-card': CreditCardIcon,
+  book: BookIcon,
   close: CloseIcon,
+  cd: CdIcon,
   menu: MenuIcon,
   moon: MoonIcon,
   sun: SunIcon,
