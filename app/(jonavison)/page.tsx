@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import '@/styles/globals.css'
-import { cn } from '@/lib/utils'
 import { Icon } from '@/components/icon'
 import { Badge } from '@/components/ui/badge'
 

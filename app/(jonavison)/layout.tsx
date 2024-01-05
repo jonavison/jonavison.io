@@ -1,5 +1,5 @@
 'use client'
-import { ThemeToggle } from '@/components/theme-toggle'
+
 import { useEffect } from 'react'
 import '@/styles/globals.css'
 interface HomeLayoutProps {
