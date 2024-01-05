@@ -100,8 +100,6 @@
 }
 .nav-indicator {
   display: block;
-  width: 32px;
-  height: 1px;
   background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary))); 
 
   color: white;
