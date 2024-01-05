@@ -99,8 +99,8 @@ export default function Home() {
           <h1 className="text-4xl font-bold leading-loose tracking-tight text-foreground sm:text-5xl">
             Jonathan Avison
           </h1>
-          <h2 className="ml-1 mt-4 text-lg font-medium tracking-tight text-foreground sm:text-xl">
-            Composer
+          <h2 className="ml-1 mt-4 text-lg font-medium leading-relaxed tracking-wider text-foreground sm:text-xl">
+            Composer & Developer
           </h2>
           <p className="ml-1 mt-4 max-w-xs text-slate-400">
             Building and creating harmonious products with modern tools for the
@@ -345,6 +345,8 @@ export default function Home() {
           <Link
             className="group flex items-center align-middle"
             href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span className="font-bold leading-6 tracking-tight text-cyan-500">
               View Full Résumé
