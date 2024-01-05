@@ -9,7 +9,7 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-soft text-soft-foreground hover:bg-soft/80 border-transparent',
+          'border-transparent bg-cyan-800/50 from-violet-500/20 from-violet-500/20 to-cyan-500 to-cyan-500/20 px-2 py-1 tracking-wider text-cyan-400  group-hover:bg-gradient-to-r group-hover:text-cyan-100',
         secondary:
           'border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80',
         success:
