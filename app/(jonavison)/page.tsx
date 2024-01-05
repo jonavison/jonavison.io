@@ -5,8 +5,6 @@ import '@/styles/globals.css'
 import { cn } from '@/lib/utils'
 import { Icon } from '@/components/icon'
 import { Badge } from '@/components/ui/badge'
-import ExperienceCard from '@/components/experience-card'
-import { CardContent } from '@/components/ui/card'
 
 type SocialIconName = 'discord' | 'facebook' | 'github'
 
@@ -95,9 +93,9 @@ export default function Home() {
     }
   }, [])
   return (
-    <div className="lg:flex lg:justify-between lg:gap-4">
+    <div className="z-50 lg:flex lg:justify-between lg:gap-4">
       <header className="z-100 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-        <div>
+        <div className="">
           <h1 className="text-4xl font-bold leading-loose tracking-tight text-foreground sm:text-5xl">
             Jonathan Avison
           </h1>
@@ -108,7 +106,7 @@ export default function Home() {
             Building and creating harmonious products with modern tools for the
             web and music industry.
           </p>
-          <nav className="hidden h-full lg:block ">
+          <nav className="hidden lg:block ">
             <ul className="inset-x-8 mt-24 flex w-max flex-col gap-4 px-8 py-8">
               <a
                 id="about-nav"
@@ -175,7 +173,10 @@ export default function Home() {
             </ul>
           </nav>
 
-          <ul className="ml-1 mt-8 flex items-center" aria-label="Social Media">
+          <ul
+            className="ml-1 mt-8 flex h-full items-center"
+            aria-label="Social Media"
+          >
             {socialIcons.map((item, index) => (
               <Link
                 key={`${index}-${item.name}`}
@@ -340,6 +341,21 @@ export default function Home() {
               </li>
             </ol>
           </div>
+
+          <Link
+            className="group flex items-center align-middle"
+            href="/resume.pdf"
+          >
+            <span className="font-bold leading-6 tracking-tight text-cyan-500">
+              View Full Résumé
+            </span>
+            <span className="transition group-hover:translate-x-2">
+              <Icon
+                name="chevron-right"
+                className="ml-1 h-5 w-5 font-bold text-cyan-500"
+              ></Icon>
+            </span>
+          </Link>
         </section>
         <section
           id="projects-section"
