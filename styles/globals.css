@@ -41,7 +41,10 @@
   html::-webkit-scrollbar-track {
     background-color: #555;
   }
-
+  ::selection {
+    background-color: hsl(var(--primary)/0.3);
+    color: #fff;
+  }
   :root {
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;

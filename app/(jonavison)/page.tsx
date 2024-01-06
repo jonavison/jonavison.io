@@ -4,6 +4,9 @@ import Link from 'next/link'
 import '@/styles/globals.css'
 import { Icon } from '@/components/icon'
 import { Badge } from '@/components/ui/badge'
+import { WorkExperiences } from '@/components/work-experiences'
+import { AuboutMe } from '@/components/about-me'
+import { Projects } from '@/components/projects'
 
 type SocialIconName = 'discord' | 'facebook' | 'github'
 
@@ -66,28 +69,32 @@ export default function Home() {
         }
       })
     }
-
     const observer = new IntersectionObserver(handleIntersection, options)
 
-    if (experiencesSectionRef.current) {
-      observer.observe(experiencesSectionRef.current)
+    const experiencesRef = experiencesSectionRef.current
+    const aboutRef = aboutSectionRef.current
+    const projectsRef = projectsSectionRef.current
+
+    if (experiencesRef) {
+      observer.observe(experiencesRef)
     }
-    if (aboutSectionRef.current) {
-      observer.observe(aboutSectionRef.current)
+    if (aboutRef) {
+      observer.observe(aboutRef)
     }
-    if (projectsSectionRef.current) {
-      observer.observe(projectsSectionRef.current)
+    if (projectsRef) {
+      observer.observe(projectsRef)
     }
 
+    // Cleanup function
     return () => {
-      if (experiencesSectionRef.current) {
-        observer.unobserve(experiencesSectionRef.current)
+      if (experiencesRef) {
+        observer.unobserve(experiencesRef)
       }
-      if (aboutSectionRef.current) {
-        observer.unobserve(aboutSectionRef.current)
+      if (aboutRef) {
+        observer.unobserve(aboutRef)
       }
-      if (projectsSectionRef.current) {
-        observer.unobserve(projectsSectionRef.current)
+      if (projectsRef) {
+        observer.unobserve(projectsRef)
       }
     }
   }, [])
@@ -198,292 +205,25 @@ export default function Home() {
           aria-label="About me"
           ref={aboutSectionRef}
         >
-          <div className="max-w-screen sticky top-0 z-20 -mx-6 mb-6 bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-slate-900/20 px-6 py-5 backdrop-blur md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 ">
-            <h2 className="text-base font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-              About
-            </h2>
-          </div>
-          <div>
-            <p className="mb-8 text-base leading-relaxed text-slate-400">
-              In 2015, I had a dream of making my own Record Label and create a
-              website for it. At that time, I tried and it was a mess. Today
-              with more knowledge, and excitement, I created{' '}
-              <span className="font-semibold text-slate-200">
-                <Link href="https://tunedsphere.com">TunedSphere</Link>
-              </span>
-              , an E-commerce and music platform.
-            </p>
-            <p className="mb-4 text-base leading-relaxed text-slate-400">
-              My self iniciativeness and team spirit makes me fastly adaptive to
-              new and dynamic environments. my wife describes me as really
-              funny, super intelligent and incredibly handsome (so she said I
-              can not come to work in suits, but I promise I will wear a clan
-              hoody). Looking forward to meet you and bring the best I can to
-              the team
-            </p>
-          </div>
+          <AuboutMe />
         </section>
+
         <section
           id="experiences-section"
           className="mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24"
           aria-label="Work Experiences"
           ref={experiencesSectionRef}
         >
-          <div className="max-w-screen sticky top-0 z-20 -mx-6 mb-6 bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-slate-900/20 px-6 py-5 backdrop-blur md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 ">
-            <h2 className="text-base font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-              Work Experiences
-            </h2>
-          </div>
-          <div>
-            <ol className="group/list">
-              <li className="mb-12">
-                <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                  <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                    2023 - Present
-                  </header>
-                  <div className="z-10 sm:col-span-6">
-                    <h3 className="leading-snug">
-                      <div className="relative mb-2">
-                        <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                        <Link
-                          href="/"
-                          className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label={`front-end dev at TunedSphere`}
-                        >
-                          Full-Stack Developer
-                        </Link>
-                      </div>
-                      <div>
-                        <p className="mb-4 text-base text-slate-400">
-                          Developer, UI/UX Designer and architect for the music
-                          platform TunedSphere
-                        </p>
-                        <div className="">
-                          <Badge className="mx-1.5 mb-2">React</Badge>
-                          <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                          <Badge className="mx-1.5 mb-2">SCSS</Badge>
-                          <Badge className="mx-1.5 mb-2">JavaScript</Badge>
-                          <Badge className="mx-1.5 mb-2">TypeScript</Badge>
-                          <Badge className="mx-1.5 mb-2">MySql</Badge>
-                          <Badge className="mx-1.5 mb-2">React</Badge>
-                          <Badge className="mx-1.5 mb-2">React</Badge>
-                        </div>
-                      </div>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li className="mb-12">
-                <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                  <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                    2020
-                  </header>
-                  <div className="z-10 sm:col-span-6">
-                    <h3 className="font-medium leading-snug ">
-                      <div className="relative mb-2">
-                        <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                        <Link
-                          href="/"
-                          className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label={`front-end dev at `}
-                        >
-                          Sound & Light Director And Technician
-                        </Link>
-                      </div>
-                      <div>
-                        <p className="mb-4 text-slate-400">
-                          Preparation of the venue and site for a large event
-                          structure Major concert and show programmer in Lyon
-                        </p>
-                        <div className=""></div>
-                      </div>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li className="mb-12">
-                <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                  <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                    2020
-                  </header>
-                  <div className="z-10 sm:col-span-6">
-                    <h3 className="font-medium leading-snug ">
-                      <div className="relative mb-2">
-                        <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                        <Link
-                          href="/"
-                          className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label={`front-end dev at `}
-                        >
-                          Sound, lighting & Decorations Technician
-                        </Link>
-                      </div>
-                      <div>
-                        <p className="mb-4 text-slate-400">
-                          Technical Director at Arto Theatre and General stage
-                          manager for 9 performing arts companies. 12,000
-                          spectators on average per year
-                        </p>
-                        <div className=""></div>
-                      </div>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>
-
-          <Link
-            className="group flex items-center align-middle"
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="font-bold leading-6 tracking-tight text-cyan-500">
-              View Full Résumé
-            </span>
-            <span className="transition group-hover:-translate-y-1 group-hover:translate-x-1">
-              <Icon
-                name="arrow-up-right"
-                className="ml-1 h-5 w-5 font-bold text-cyan-500"
-              ></Icon>
-            </span>
-          </Link>
+          <WorkExperiences />
         </section>
+
         <section
           id="projects-section"
           className="mb-16 scroll-mt-16 lg:mb-36 lg:scroll-mt-24"
           aria-label="Work in Progress"
           ref={projectsSectionRef}
         >
-          <div className="max-w-screen sticky top-0 z-20 -mx-6 mb-6 bg-gradient-to-r from-indigo-900/20 via-purple-900/20 to-slate-900/20 px-6 py-5 backdrop-blur md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0 ">
-            <h2 className="text-base font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-              Projects
-            </h2>
-          </div>
-          <ol className="group/list">
-            <li className="mb-12">
-              <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                  <Icon name="credit-card" className="h-8 w-8"></Icon>
-                </header>
-                <div className="z-10 sm:col-span-6">
-                  <h3 className="leading-snug">
-                    <div className="relative mb-2">
-                      <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                      <Link
-                        href="/"
-                        className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        aria-label={`front-end dev at TunedSphere`}
-                      >
-                        E-Commerce Website
-                      </Link>
-                    </div>
-                    <div>
-                      <p className="mb-4 text-base text-slate-400">
-                        Building a full E-commerce Storefront with products,
-                        categories, and subcategories. Seller and customer
-                        workflows with subscriptions plans.
-                      </p>
-                      <div className="">
-                        <Badge className="mx-1.5 mb-2">React</Badge>
-                        <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                        <Badge className="mx-1.5 mb-2">SCSS</Badge>
-                        <Badge className="mx-1.5 mb-2">JavaScript</Badge>
-                        <Badge className="mx-1.5 mb-2">TypeScript</Badge>
-                        <Badge className="mx-1.5 mb-2">MySql</Badge>
-                        <Badge className="mx-1.5 mb-2">React</Badge>
-                        <Badge className="mx-1.5 mb-2">React</Badge>
-                      </div>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                  <Icon name="cd" className="h-8 w-8"></Icon>
-                </header>
-                <div className="z-10 sm:col-span-6">
-                  <h3 className="leading-snug">
-                    <div className="relative mb-2">
-                      <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                      <Link
-                        href="/"
-                        className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        aria-label={`front-end dev at TunedSphere`}
-                      >
-                        All in One BandCamp & Spotify
-                      </Link>
-                    </div>
-                    <div>
-                      <p className="mb-4 text-base text-slate-400">
-                        Creating a vibrant music ecosystem catering to the
-                        dynamic world of psychedelic trance, uniting artists,
-                        record labels, and DJs.
-                      </p>
-                      <div className="">
-                        <Badge className="mx-1.5 mb-2">React</Badge>
-                        <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                      </div>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                  <Icon name="book" className="h-8 w-8"></Icon>
-                </header>
-                <div className="z-10 sm:col-span-6">
-                  <h3 className="leading-snug">
-                    <div className="relative mb-2">
-                      <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                      <Link
-                        href="/"
-                        className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        aria-label={`front-end dev at TunedSphere`}
-                      >
-                        Modern Markdown
-                      </Link>
-                    </div>
-                    <div>
-                      <p className="mb-4 text-base text-slate-400">
-                        Blog, Articles, Documentation using markdowns
-                      </p>
-                      <div className="">
-                        <Badge className="mx-1.5 mb-2">MDX</Badge>
-                        <Badge className="mx-1.5 mb-2">Contentlayer</Badge>
-                        <Badge className="mx-1.5 mb-2">JSON</Badge>
-                      </div>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </li>
-          </ol>
+          <Projects />
         </section>
       </main>
     </div>

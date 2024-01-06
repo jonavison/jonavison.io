@@ -13,7 +13,7 @@ import { WarningIcon } from './Warning'
 import { CreditCardIcon } from './CreditCard'
 import { CdIcon } from './Cd'
 import { BookIcon } from './Book'
-import { ArrowUpRightIcon } from './Book copy'
+import { ArrowUpRightIcon } from './ArrowUpRight'
 
 import { SocialIconName, socialIconMap } from './social'
 export type IconName =
