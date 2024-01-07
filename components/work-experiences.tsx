@@ -25,7 +25,7 @@ export function WorkExperiences() {
                     <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                     <Link
                       href="/"
-                      className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                      className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label={`front-end dev at TunedSphere`}
