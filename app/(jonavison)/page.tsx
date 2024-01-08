@@ -3,12 +3,11 @@ import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import '@/styles/globals.css'
 import { Icon } from '@/components/icon'
-import { Badge } from '@/components/ui/badge'
 import { WorkExperiences } from '@/components/work-experiences'
 import { AuboutMe } from '@/components/about-me'
 import { Projects } from '@/components/projects'
 
-type SocialIconName = 'discord' | 'facebook' | 'github'
+type SocialIconName = 'tunedsphere' | 'facebook' | 'github'
 
 const socialIcons: {
   name: string
@@ -17,20 +16,20 @@ const socialIcons: {
   icon: SocialIconName // Ensure the icon property matches the defined type
 }[] = [
   {
-    name: 'Discord',
-    href: 'https://discord.com/',
+    name: 'TunedSphere',
+    href: 'https://tunedsphere.com/',
     external: true,
-    icon: 'discord',
+    icon: 'tunedsphere',
   },
   {
     name: 'Facebook',
-    href: 'https://www.facebook.com/',
+    href: 'https://www.facebook.com/jon.advision/',
     external: true,
     icon: 'facebook',
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/',
+    href: 'https://github.com/jonavison/',
     external: true,
     icon: 'github',
   },

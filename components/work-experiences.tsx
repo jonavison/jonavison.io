@@ -45,8 +45,7 @@ export function WorkExperiences() {
                       <Badge className="mx-1.5 mb-2">JavaScript</Badge>
                       <Badge className="mx-1.5 mb-2">TypeScript</Badge>
                       <Badge className="mx-1.5 mb-2">MySql</Badge>
-                      <Badge className="mx-1.5 mb-2">React</Badge>
-                      <Badge className="mx-1.5 mb-2">React</Badge>
+                      <Badge className="mx-1.5 mb-2">Stripe</Badge>
                     </div>
                   </div>
                 </h3>
