@@ -14,10 +14,13 @@ import { CreditCardIcon } from './CreditCard'
 import { CdIcon } from './Cd'
 import { BookIcon } from './Book'
 import { ArrowUpRightIcon } from './ArrowUpRight'
+import { DownloadIcon } from './Download'
+import { TunedsphereIcon } from './Tunedsphere'
 
 import { SocialIconName, socialIconMap } from './social'
 export type IconName =
   | SocialIconName
+  | 'download'
   | 'menu'
   | 'moon'
   | 'sun'
@@ -31,6 +34,7 @@ export type IconName =
   | 'cd'
   | 'book'
   | 'arrow-up-right'
+  | 'tunedsphere'
 
 const iconMap = {
   ...socialIconMap,
@@ -40,6 +44,7 @@ const iconMap = {
   'chevron-right': ChevronRightIcon,
   'credit-card': CreditCardIcon,
   'arrow-up-right': ArrowUpRightIcon,
+  download: DownloadIcon,
   book: BookIcon,
   close: CloseIcon,
   cd: CdIcon,
@@ -47,6 +52,7 @@ const iconMap = {
   moon: MoonIcon,
   sun: SunIcon,
   warning: WarningIcon,
+  tunedsphere: TunedsphereIcon,
 }
 
 type SVGAttributes = Partial<SVGProps<SVGSVGElement>>

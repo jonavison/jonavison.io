@@ -7,7 +7,7 @@ import { WorkExperiences } from '@/components/work-experiences'
 import { AuboutMe } from '@/components/about-me'
 import { Projects } from '@/components/projects'
 
-type SocialIconName = 'tunedsphere' | 'facebook' | 'github'
+type SocialIconName = 'facebook' | 'github' | 'tunedsphere'
 
 const socialIcons: {
   name: string
@@ -16,8 +16,8 @@ const socialIcons: {
   icon: SocialIconName // Ensure the icon property matches the defined type
 }[] = [
   {
-    name: 'TunedSphere',
-    href: 'https://tunedsphere.com/',
+    name: 'Tunedsphere',
+    href: 'https://www.facebook.com/jon.advision/',
     external: true,
     icon: 'tunedsphere',
   },
@@ -190,7 +190,10 @@ export default function Home() {
                 rel={item.external ? 'noreferrer' : ''}
                 className="mr-5 flex items-center space-x-2 text-xs"
               >
-                <Icon name={item.icon} className="h-6 w-6 text-slate-400" />
+                <Icon
+                  name={item.icon}
+                  className="h-6 w-6 text-slate-400 hover:text-slate-200"
+                />
                 <span className="sr-only">{item.name}</span>
               </Link>
             ))}

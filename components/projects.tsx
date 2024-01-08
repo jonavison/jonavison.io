@@ -21,13 +21,21 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://tunedsphere.com/shop"
+                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    E-Commerce Website
+                    <span className="group-hover/link:text-cyan-400">
+                      E-Commerce Website
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>
@@ -62,13 +70,21 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://tunedsphere.com/music"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-500 group-hover/link:text-cyan-500"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    All in One BandCamp & Spotify
+                    <span className="group-hover/link:text-cyan-400">
+                      All in One BandCamp & Spotify
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>
@@ -100,13 +116,21 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://tunedsphere.com/docs"
+                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    Modern Markdown
+                    <span className="group-hover/link:text-cyan-400">
+                      Modern Markdown
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>

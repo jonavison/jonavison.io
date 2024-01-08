@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import { Badge } from './ui/badge'
 import { Icon } from './icon'
-
+import { Button } from './ui/button'
 export function WorkExperiences() {
   return (
     <>
@@ -119,15 +119,35 @@ export function WorkExperiences() {
         </ol>
       </div>
       <div>
-        <span className="font-bold leading-6 tracking-tight text-cyan-500">
-          View Full Résumé
-        </span>
-        <span className="transition group-hover:-translate-y-1 group-hover:translate-x-1">
-          <Icon
-            name="arrow-up-right"
-            className="ml-1 h-5 w-5 font-bold text-cyan-500"
-          ></Icon>
-        </span>
+        <div className="inline-flex items-center gap-6">
+          <div className="group">
+            <Link
+              href="/pdf/resume.pdf"
+              target="_blank"
+              className="inline-flex items-center font-bold leading-6 tracking-tight text-cyan-500 underline-offset-4 group-hover:underline"
+            >
+              View Full Résumé
+              <span className="items-center align-middle">
+                <Icon
+                  name="arrow-up-right"
+                  className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold text-cyan-500 transition group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none"
+                ></Icon>
+              </span>
+            </Link>
+          </div>
+          <Link
+            aria-label="download resume"
+            download="resume.pdf"
+            href="/pdf/resume.pdf"
+            target="_blank"
+            className="items-center rounded-sm border p-1 font-bold leading-6 tracking-tight text-cyan-500 hover:bg-slate-900"
+          >
+            <Icon
+              name="download"
+              className="h-5 w-5 font-bold text-cyan-500"
+            ></Icon>
+          </Link>
+        </div>
       </div>
     </>
   )
