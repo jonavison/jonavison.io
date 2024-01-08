@@ -27,13 +27,13 @@ export function Projects() {
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    <span className="group-hover/link:text-cyan-400">
+                    <span className="group-hover/link:text-slate-400">
                       E-Commerce Website
                     </span>
                     <span className="items-center align-middle">
                       <Icon
                         name="arrow-up-right"
-                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
                       ></Icon>
                     </span>
                   </Link>
@@ -71,18 +71,18 @@ export function Projects() {
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
                     href="https://tunedsphere.com/music"
-                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-500 group-hover/link:text-cyan-500"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-500 group-hover/link:text-slate-400"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    <span className="group-hover/link:text-cyan-400">
+                    <span className="group-hover/link:text-slate-400">
                       All in One BandCamp & Spotify
                     </span>
                     <span className="items-center align-middle">
                       <Icon
                         name="arrow-up-right"
-                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
                       ></Icon>
                     </span>
                   </Link>
@@ -122,13 +122,13 @@ export function Projects() {
                     rel="noreferrer noopener"
                     aria-label={`front-end dev at TunedSphere`}
                   >
-                    <span className="group-hover/link:text-cyan-400">
+                    <span className="group-hover/link:text-slate-400">
                       Modern Markdown
                     </span>
                     <span className="items-center align-middle">
                       <Icon
                         name="arrow-up-right"
-                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-cyan-500 motion-reduce:transition-none"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
                       ></Icon>
                     </span>
                   </Link>
