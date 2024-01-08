@@ -39,12 +39,12 @@ export function Projects() {
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
                     <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                    <Badge className="mx-1.5 mb-2">SCSS</Badge>
                     <Badge className="mx-1.5 mb-2">JavaScript</Badge>
                     <Badge className="mx-1.5 mb-2">TypeScript</Badge>
-                    <Badge className="mx-1.5 mb-2">MySql</Badge>
-                    <Badge className="mx-1.5 mb-2">React</Badge>
-                    <Badge className="mx-1.5 mb-2">React</Badge>
+                    <Badge className="mx-1.5 mb-2">Zod</Badge>
+                    <Badge className="mx-1.5 mb-2">Clerk</Badge>
+                    <Badge className="mx-1.5 mb-2">Stripe</Badge>
+                    <Badge className="mx-1.5 mb-2">Resend</Badge>
                   </div>
                 </div>
               </h3>
@@ -80,6 +80,9 @@ export function Projects() {
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
                     <Badge className="mx-1.5 mb-2">NextJs</Badge>
+                    <Badge className="mx-1.5 mb-2">JavaScript</Badge>
+                    <Badge className="mx-1.5 mb-2">TypeScript</Badge>
+                    <Badge className="mx-1.5 mb-2">MySql</Badge>
                   </div>
                 </div>
               </h3>
