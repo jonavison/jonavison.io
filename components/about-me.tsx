@@ -19,11 +19,12 @@ export function AuboutMe() {
           , an E-commerce and music platform.
         </p>
         <p className="mb-4 text-base leading-relaxed text-slate-400">
-          My self iniciativeness and team spirit makes me fastly adaptive to new
-          and dynamic environments. my wife describes me as really funny, super
-          intelligent and incredibly handsome (so she said I can not come to
-          work in suits, but I promise I will wear a clan hoody). Looking
-          forward to meet you and bring the best I can to the team
+          I am mainly focused these days on creating and designing UI/UX, and
+          composing music. My self iniciativeness and team spirit makes me
+          fastly adaptive to new and dynamic environments. According to my wife,
+          I have a great sense of humor, intelligence, and she encourages me to
+          consider working as a web developer while also suggesting I wear a
+          hoody and glasses.
         </p>
       </div>
     </>
