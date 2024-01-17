@@ -42,7 +42,8 @@ export function Projects() {
                   <p className="mb-4 text-base text-slate-400">
                     Building a full E-commerce Storefront with products,
                     categories, and subcategories. Seller and customer workflows
-                    with subscriptions plans.
+                    with subscriptions plans and payment methods. User
+                    Authorisation system.
                   </p>
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
@@ -89,9 +90,9 @@ export function Projects() {
                 </div>
                 <div>
                   <p className="mb-4 text-base text-slate-400">
-                    Creating a vibrant music ecosystem catering to the dynamic
-                    world of psychedelic trance, uniting artists, record labels,
-                    and DJs.
+                    Creating a vibrant and designing a music ecosystem with a
+                    MySQL database. Learning principles of of REST APIs. (Work
+                    in progress)
                   </p>
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
