@@ -35,8 +35,8 @@ export function WorkExperiences() {
                   </div>
                   <div>
                     <p className="mb-4 text-base text-slate-400">
-                      Developer, UI/UX Designer and architect for the music
-                      platform TunedSphere
+                      Front-end & Back-end Developer, UI/UX Designer and
+                      architect for the music platform TunedSphere
                     </p>
                     <div className="">
                       <Badge className="mx-1.5 mb-2">React</Badge>
