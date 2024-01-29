@@ -99,19 +99,19 @@ export default function Home() {
   }, [])
   return (
     <div className="z-50 lg:flex lg:justify-between lg:gap-4">
-      <header className="z-100 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+      <header className="z-100  lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
         <div className="">
-          <h1 className="text-4xl font-bold leading-loose tracking-tight text-foreground sm:text-5xl">
+          <h1 className="animate-slideIn text-4xl font-bold leading-loose tracking-tight text-foreground opacity-0 [--slideIn-delay:200ms] sm:text-5xl">
             Jonathan Avison
           </h1>
-          <h2 className="ml-1 mt-4 text-lg font-medium leading-relaxed tracking-wider text-foreground sm:text-xl">
+          <h2 className="ml-1 mt-4 animate-slideIn text-lg font-medium leading-relaxed tracking-wider text-foreground opacity-0 [--slideIn-delay:400ms] sm:text-xl">
             Composer & Developer
           </h2>
-          <p className="ml-1 mt-4 max-w-xs text-slate-400">
+          <p className="ml-1 mt-4 max-w-xs animate-slideIn text-slate-400 opacity-0 [--slideIn-delay:600ms]">
             Building and creating harmonious products with modern tools for the
             web and music industry.
           </p>
-          <nav className="hidden lg:block ">
+          <nav className="hidden animate-slideIn opacity-0 [--slideIn-delay:900ms] lg:block">
             <ul className="inset-x-8 mt-24 flex w-max flex-col gap-4 px-8 py-8">
               <a
                 id="about-nav"
@@ -200,7 +200,10 @@ export default function Home() {
           </ul>
         </div>
       </header>
-      <main id="content" className="pt-24 text-foreground lg:w-1/2 lg:py-24">
+      <main
+        id="content"
+        className="animate-slideIn pt-24 text-foreground opacity-0 [--slideIn-delay:900ms] lg:w-1/2 lg:py-24"
+      >
         <section
           id="about-section"
           className="mb-16 scroll-mt-16 lg:mb-24 lg:scroll-mt-24"
