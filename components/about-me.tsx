@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 export function AuboutMe() {
   return (
     <>
@@ -10,21 +11,21 @@ export function AuboutMe() {
 
       <div>
         <p className="mb-8 text-base leading-relaxed text-slate-400">
-          In 2015, I had a dream of making my own Record Label and create a
-          website for it. At that time, I tried and it was a mess. Today with
-          more knowledge, and excitement, I created{' '}
+          In 2015 I dreamed of a soft little record label with a home on the
+          web. The first try was messy — but the mood stayed. That spark grew
+          into{' '}
           <span className="font-semibold text-slate-200">
             <Link href="https://tunedsphere.com">TunedSphere</Link>
           </span>
-          , an E-commerce and music platform.
+          : music, artists, festivals, and shop flows that still feel warm and
+          human.
         </p>
         <p className="mb-4 text-base leading-relaxed text-slate-400">
-          I am mainly focused these days on creating and designing UI/UX, and
-          composing music. My self iniciativeness and team spirit makes me
-          fastly adaptive to new and dynamic environments. According to my wife,
-          I have a great sense of humor, intelligence, and she encourages me to
-          consider working as a web developer while also suggesting I wear a
-          hoody and glasses.
+          Alongside that, I build Smile, Laugh, and Mood — a local-first media
+          ecosystem where music and video stay on your machine, and Mood is the
+          optional cloud when you want sync. Soft UI, serious craft, and a
+          little room for a smile. According to my wife, I should keep coding —
+          preferably in a hoodie and glasses.
         </p>
       </div>
     </>

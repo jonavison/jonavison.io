@@ -1,0 +1,7 @@
+allowBuilds:
+  '@vgpu/adapter-node': true
+  contentlayer: true
+  esbuild: true
+  protobufjs: true
+  unrs-resolver: true
+  webgpu: true

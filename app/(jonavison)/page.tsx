@@ -108,8 +108,8 @@ export default function Home() {
             Composer & Developer
           </h2>
           <p className="ml-1 mt-4 max-w-xs animate-slideIn text-slate-400 opacity-0 [--slideIn-delay:600ms]">
-            Building and creating harmonious products with modern tools for the
-            web and music industry.
+            Soft work for the web and Mac — TunedSphere, plus Smile, Laugh, and
+            Mood.
           </p>
           <nav className="hidden animate-slideIn opacity-0 [--slideIn-delay:900ms] lg:block">
             <ul className="inset-x-8 mt-24 flex w-max flex-col gap-4 px-8 py-8">
