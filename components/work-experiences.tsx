@@ -17,6 +17,47 @@ export function WorkExperiences() {
             <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
               <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
               <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+                2024 — Present
+              </header>
+              <div className="z-10 sm:col-span-6">
+                <h3 className="leading-snug">
+                  <div className="relative mb-2">
+                    <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                    <Link
+                      href="https://avison-soft.com/smile"
+                      className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      aria-label="Smile Laugh Mood ecosystem"
+                    >
+                      Indie apps · Smile, Laugh &amp; Mood
+                    </Link>
+                  </div>
+                  <div>
+                    <p className="mb-4 text-base text-slate-400">
+                      Designing and shipping a local-first media ecosystem —
+                      Smile for music, Laugh for video, Mood as the optional
+                      sync layer. Soft products, privacy-first defaults, and
+                      craft that still leaves room to smile.
+                    </p>
+                    <div className="">
+                      <Badge className="mx-1.5 mb-2">Swift</Badge>
+                      <Badge className="mx-1.5 mb-2">macOS</Badge>
+                      <Badge className="mx-1.5 mb-2">iOS</Badge>
+                      <Badge className="mx-1.5 mb-2">Next.js</Badge>
+                      <Badge className="mx-1.5 mb-2">Hono</Badge>
+                      <Badge className="mx-1.5 mb-2">Product</Badge>
+                    </div>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </li>
+
+          <li className="mb-12">
+            <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+              <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+              <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
                 2022 — Present
               </header>
               <div className="z-10 sm:col-span-6">
@@ -48,46 +89,6 @@ export function WorkExperiences() {
                       <Badge className="mx-1.5 mb-2">MySQL</Badge>
                       <Badge className="mx-1.5 mb-2">Stripe</Badge>
                       <Badge className="mx-1.5 mb-2">UI/UX</Badge>
-                    </div>
-                  </div>
-                </h3>
-              </div>
-            </div>
-          </li>
-
-          <li className="mb-12">
-            <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-              <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-              <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                Present
-              </header>
-              <div className="z-10 sm:col-span-6">
-                <h3 className="leading-snug">
-                  <div className="relative mb-2">
-                    <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                    <Link
-                      href="https://avison-soft.com/smile"
-                      className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      aria-label="Smile Laugh Mood ecosystem"
-                    >
-                      Indie apps · Smile, Laugh &amp; Mood
-                    </Link>
-                  </div>
-                  <div>
-                    <p className="mb-4 text-base text-slate-400">
-                      Designing and shipping a local-first media ecosystem —
-                      Smile for music, Laugh for video, Mood as the optional
-                      sync layer. Soft products, privacy-first defaults, and
-                      craft that still leaves room to smile.
-                    </p>
-                    <div className="">
-                      <Badge className="mx-1.5 mb-2">Swift</Badge>
-                      <Badge className="mx-1.5 mb-2">macOS</Badge>
-                      <Badge className="mx-1.5 mb-2">Next.js</Badge>
-                      <Badge className="mx-1.5 mb-2">Hono</Badge>
-                      <Badge className="mx-1.5 mb-2">Product</Badge>
                     </div>
                   </div>
                 </h3>
