@@ -23,9 +23,11 @@ export function AuboutMe() {
         <p className="mb-4 text-base leading-relaxed text-slate-400">
           Alongside that, I build Smile, Laugh, and Mood — a local-first media
           ecosystem where music and video stay on your machine, and Mood is the
-          optional cloud when you want sync. Soft UI, serious craft, and a
-          little room for a smile. According to my wife, I should keep coding —
-          preferably in a hoodie and glasses.
+          optional cloud when you want sync. I also ship BackPicker, a hiking
+          pack composer that turns gear into a clear weight and volume picture,
+          and Squirrel AI, a chat workspace for threads and exports. Soft UI,
+          serious craft, and a little room for a smile. According to my wife, I
+          should keep coding — preferably in a hoodie and glasses.
         </p>
       </div>
     </>

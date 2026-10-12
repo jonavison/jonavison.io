@@ -95,58 +95,6 @@ export function WorkExperiences() {
               </div>
             </div>
           </li>
-
-          <li className="mb-12">
-            <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-              <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-              <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                2016 — 2018
-              </header>
-              <div className="z-10 sm:col-span-6">
-                <h3 className="font-medium leading-snug ">
-                  <div className="relative mb-2">
-                    <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                    <span className="inline-flex text-xl font-medium text-slate-200">
-                      Sound &amp; Light Director
-                    </span>
-                  </div>
-                  <div>
-                    <p className="mb-4 text-slate-400">
-                      Venue and site prep for large event structures —
-                      programming major concerts and shows in Lyon, keeping the
-                      room feeling alive.
-                    </p>
-                  </div>
-                </h3>
-              </div>
-            </div>
-          </li>
-
-          <li className="mb-12">
-            <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-              <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-              <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-                2014 — 2015
-              </header>
-              <div className="z-10 sm:col-span-6">
-                <h3 className="font-medium leading-snug ">
-                  <div className="relative mb-2">
-                    <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
-                    <span className="inline-flex text-xl font-medium text-slate-200">
-                      Sound, Lighting &amp; Decorations
-                    </span>
-                  </div>
-                  <div>
-                    <p className="mb-4 text-slate-400">
-                      Technical Director at Arto Theatre and stage manager for
-                      nine performing-arts companies — about 12,000 spectators a
-                      year, mood set one cue at a time.
-                    </p>
-                  </div>
-                </h3>
-              </div>
-            </div>
-          </li>
         </ol>
       </div>
       <div>

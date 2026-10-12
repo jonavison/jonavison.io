@@ -15,6 +15,100 @@ export function Projects() {
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
             <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+              <Icon name="backpack" className="h-8 w-8"></Icon>
+            </header>
+            <div className="z-10 sm:col-span-6">
+              <h3 className="leading-snug">
+                <div className="relative mb-2">
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                  <Link
+                    href="https://backpicker.netlify.app/"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="BackPicker hiking pack composer"
+                  >
+                    <span className="group-hover/link:text-slate-400">
+                      BackPicker
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <p className="mb-4 text-base text-slate-400">
+                    Pack smarter — compose hiking gear and see weight and volume
+                    like a DaisyDisk sunburst, with a shared catalog and personal
+                    gear library.
+                  </p>
+                  <div className="">
+                    <Badge className="mx-1.5 mb-2">Next.js</Badge>
+                    <Badge className="mx-1.5 mb-2">TypeScript</Badge>
+                    <Badge className="mx-1.5 mb-2">Neon</Badge>
+                    <Badge className="mx-1.5 mb-2">Clerk</Badge>
+                    <Badge className="mx-1.5 mb-2">Drizzle</Badge>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </li>
+
+        <li className="mb-12">
+          <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+              <Icon name="squirrel" className="h-8 w-8"></Icon>
+            </header>
+            <div className="z-10 sm:col-span-6">
+              <h3 className="leading-snug">
+                <div className="relative mb-2">
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                  <Link
+                    href="https://squirrel-ai.vercel.app/"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Squirrel AI chat workspace"
+                  >
+                    <span className="group-hover/link:text-slate-400">
+                      Squirrel AI
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <p className="mb-4 text-base text-slate-400">
+                    An AI chat workspace — threads, pins, a library view, and
+                    conversation export to PDF and slides when the talk needs to
+                    leave the room.
+                  </p>
+                  <div className="">
+                    <Badge className="mx-1.5 mb-2">Next.js</Badge>
+                    <Badge className="mx-1.5 mb-2">TypeScript</Badge>
+                    <Badge className="mx-1.5 mb-2">AI SDK</Badge>
+                    <Badge className="mx-1.5 mb-2">Clerk</Badge>
+                    <Badge className="mx-1.5 mb-2">Upstash</Badge>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </li>
+
+        <li className="mb-12">
+          <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
               <Icon name="cd" className="h-8 w-8"></Icon>
             </header>
             <div className="z-10 sm:col-span-6">
@@ -63,7 +157,7 @@ export function Projects() {
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
             <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-              <Icon name="cd" className="h-8 w-8"></Icon>
+              <Icon name="video" className="h-8 w-8"></Icon>
             </header>
             <div className="z-10 sm:col-span-6">
               <h3 className="leading-snug">
@@ -111,7 +205,7 @@ export function Projects() {
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
             <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
-              <Icon name="credit-card" className="h-8 w-8"></Icon>
+              <Icon name="cloud" className="h-8 w-8"></Icon>
             </header>
             <div className="z-10 sm:col-span-6">
               <h3 className="leading-snug">
