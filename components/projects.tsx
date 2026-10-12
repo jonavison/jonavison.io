@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Icon } from './icon'
 import { Badge } from './ui/badge'
+
 export function Projects() {
   return (
     <>
@@ -12,7 +13,103 @@ export function Projects() {
       <ol className="group/list">
         <li className="mb-12">
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+              <Icon name="cd" className="h-8 w-8"></Icon>
+            </header>
+            <div className="z-10 sm:col-span-6">
+              <h3 className="leading-snug">
+                <div className="relative mb-2">
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                  <Link
+                    href="https://avison-soft.com/smile"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Smile music app"
+                  >
+                    <span className="group-hover/link:text-slate-400">
+                      Smile
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <p className="mb-4 text-base text-slate-400">
+                    Local-first macOS music player — tags, metadata, EQ, and soft
+                    themes. Optional Mood sync when you want the library
+                    elsewhere.
+                  </p>
+                  <div className="">
+                    <Badge className="mx-1.5 mb-2">Swift</Badge>
+                    <Badge className="mx-1.5 mb-2">macOS</Badge>
+                    <Badge className="mx-1.5 mb-2">GRDB</Badge>
+                    <Badge className="mx-1.5 mb-2">Sparkle</Badge>
+                    <Badge className="mx-1.5 mb-2">EQ</Badge>
+                    <Badge className="mx-1.5 mb-2">Privacy</Badge>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </li>
+
+        <li className="mb-12">
+          <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+              <Icon name="cd" className="h-8 w-8"></Icon>
+            </header>
+            <div className="z-10 sm:col-span-6">
+              <h3 className="leading-snug">
+                <div className="relative mb-2">
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                  <Link
+                    href="https://avison-soft.com/laugh"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Laugh video app"
+                  >
+                    <span className="group-hover/link:text-slate-400">
+                      Laugh
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <p className="mb-4 text-base text-slate-400">
+                    Local-first video player — smart library, cinematic
+                    playback, wide formats. Privacy-first; Mood for media sync
+                    later.
+                  </p>
+                  <div className="">
+                    <Badge className="mx-1.5 mb-2">Swift</Badge>
+                    <Badge className="mx-1.5 mb-2">macOS</Badge>
+                    <Badge className="mx-1.5 mb-2">mpv</Badge>
+                    <Badge className="mx-1.5 mb-2">GRDB</Badge>
+                    <Badge className="mx-1.5 mb-2">AVFoundation</Badge>
+                    <Badge className="mx-1.5 mb-2">Privacy</Badge>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </li>
+
+        <li className="mb-12">
+          <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
               <Icon name="credit-card" className="h-8 w-8"></Icon>
             </header>
@@ -21,25 +118,79 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://avison-soft.com/mood-cloud"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
                     target="_blank"
                     rel="noreferrer noopener"
-                    aria-label={`front-end dev at TunedSphere`}
+                    aria-label="Mood cloud sync"
                   >
-                    E-Commerce Website
+                    <span className="group-hover/link:text-slate-400">
+                      Mood
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>
                   <p className="mb-4 text-base text-slate-400">
-                    Building a full E-commerce Storefront with products,
-                    categories, and subcategories. Seller and customer workflows
-                    with subscriptions plans.
+                    Shared sync for Smile &amp; Laugh — one vault, predictable
+                    tiers, local-first until you choose the cloud.
+                  </p>
+                  <div className="">
+                    <Badge className="mx-1.5 mb-2">Hono</Badge>
+                    <Badge className="mx-1.5 mb-2">TypeScript</Badge>
+                    <Badge className="mx-1.5 mb-2">Postgres</Badge>
+                    <Badge className="mx-1.5 mb-2">B2</Badge>
+                    <Badge className="mx-1.5 mb-2">Stripe</Badge>
+                    <Badge className="mx-1.5 mb-2">JWT</Badge>
+                  </div>
+                </div>
+              </h3>
+            </div>
+          </div>
+        </li>
+
+        <li className="mb-12">
+          <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
+              <Icon name="credit-card" className="h-8 w-8"></Icon>
+            </header>
+            <div className="z-10 sm:col-span-6">
+              <h3 className="leading-snug">
+                <div className="relative mb-2">
+                  <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
+                  <Link
+                    href="https://tunedsphere.com/shop"
+                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="TunedSphere shop"
+                  >
+                    <span className="group-hover/link:text-slate-400">
+                      TunedSphere Shop
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
+                  </Link>
+                </div>
+                <div>
+                  <p className="mb-4 text-base text-slate-400">
+                    A storefront for artists — products, categories,
+                    subscriptions, and payments — kept clear so the music still
+                    feels like the main character.
                   </p>
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
-                    <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                    <Badge className="mx-1.5 mb-2">JavaScript</Badge>
+                    <Badge className="mx-1.5 mb-2">Next.js</Badge>
                     <Badge className="mx-1.5 mb-2">TypeScript</Badge>
                     <Badge className="mx-1.5 mb-2">Zod</Badge>
                     <Badge className="mx-1.5 mb-2">Clerk</Badge>
@@ -51,9 +202,10 @@ export function Projects() {
             </div>
           </div>
         </li>
+
         <li className="mb-12">
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
               <Icon name="cd" className="h-8 w-8"></Icon>
             </header>
@@ -62,36 +214,43 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://music.tunedsphere.com"
+                    className="group/link inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-500 group-hover/link:text-slate-400"
                     target="_blank"
                     rel="noreferrer noopener"
-                    aria-label={`front-end dev at TunedSphere`}
+                    aria-label="TunedSphere music platform"
                   >
-                    All in One BandCamp & Spotify
+                    <span className="group-hover/link:text-slate-400">
+                      TunedSphere Music
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>
                   <p className="mb-4 text-base text-slate-400">
-                    Creating a vibrant music ecosystem catering to the dynamic
-                    world of psychedelic trance, uniting artists, record labels,
-                    and DJs.
+                    Artists, albums, labels, DJs, and festival tracking — a
+                    listening home with mood and genre paths, still growing.
                   </p>
                   <div className="">
                     <Badge className="mx-1.5 mb-2">React</Badge>
-                    <Badge className="mx-1.5 mb-2">NextJs</Badge>
-                    <Badge className="mx-1.5 mb-2">JavaScript</Badge>
+                    <Badge className="mx-1.5 mb-2">Next.js</Badge>
                     <Badge className="mx-1.5 mb-2">TypeScript</Badge>
-                    <Badge className="mx-1.5 mb-2">MySql</Badge>
+                    <Badge className="mx-1.5 mb-2">MySQL</Badge>
                   </div>
                 </div>
               </h3>
             </div>
           </div>
         </li>
+
         <li className="mb-12">
           <div className="group relative grid cursor-pointer rounded-lg p-1 leading-relaxed text-slate-400 transition-all hover:!opacity-100 group-hover/list:opacity-45 sm:grid-cols-8 sm:gap-8 md:gap-4 ">
-            <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg from-indigo-900/20 to-purple-900/20 transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <div className="card-pointer-sheen absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg opacity-0 transition-opacity motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:opacity-100 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
             <header className="z-10 mb-2 mt-2 text-xs font-semibold uppercase tracking-wide text-slate-400 sm:col-span-2">
               <Icon name="book" className="h-8 w-8"></Icon>
             </header>
@@ -100,18 +259,27 @@ export function Projects() {
                 <div className="relative mb-2">
                   <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-violet-500/80 via-sky-500/70 to-sky-500/0 opacity-0 transition group-hover:opacity-100"></span>
                   <Link
-                    href="/"
-                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-teal-300"
+                    href="https://tunedsphere.com/docs"
+                    className="group/link decoration- inline-flex text-xl font-medium text-slate-200 focus-visible:text-cyan-300"
                     target="_blank"
                     rel="noreferrer noopener"
-                    aria-label={`front-end dev at TunedSphere`}
+                    aria-label="TunedSphere docs"
                   >
-                    Modern Markdown
+                    <span className="group-hover/link:text-slate-400">
+                      Docs &amp; Stories
+                    </span>
+                    <span className="items-center align-middle">
+                      <Icon
+                        name="arrow-up-right"
+                        className="ml-1 h-4 w-4 shrink-0 translate-y-px font-bold transition group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:text-slate-400 motion-reduce:transition-none"
+                      ></Icon>
+                    </span>
                   </Link>
                 </div>
                 <div>
                   <p className="mb-4 text-base text-slate-400">
-                    Blog, Articles, Documentation using markdowns
+                    Blog, articles, and documentation in markdown — clear words
+                    for a soft product.
                   </p>
                   <div className="">
                     <Badge className="mx-1.5 mb-2">MDX</Badge>
