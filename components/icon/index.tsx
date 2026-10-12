@@ -15,6 +15,7 @@ import { CdIcon } from './Cd'
 import { BookIcon } from './Book'
 import { ArrowUpRightIcon } from './ArrowUpRight'
 import { DownloadIcon } from './Download'
+import { SearchIcon } from './Search'
 import { TunedsphereIcon } from './Tunedsphere'
 
 import { SocialIconName, socialIconMap } from './social'
@@ -33,6 +34,7 @@ export type IconName =
   | 'credit-card'
   | 'cd'
   | 'book'
+  | 'search'
   | 'arrow-up-right'
   | 'tunedsphere'
 
@@ -46,6 +48,7 @@ const iconMap = {
   'arrow-up-right': ArrowUpRightIcon,
   download: DownloadIcon,
   book: BookIcon,
+  search: SearchIcon,
   close: CloseIcon,
   cd: CdIcon,
   menu: MenuIcon,
